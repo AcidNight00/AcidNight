@@ -1,0 +1,22 @@
+#########################################################
+## Extrudeur :
+
+[extruder]
+step_pin: PF4
+dir_pin: PF3
+enable_pin: !PF5
+microsteps: 16
+rotation_distance: 34.557
+nozzle_diameter: 0.400
+filament_diameter: 1.750
+heater_pin: PA1
+sensor_type: EPCOS 100K B57560G104F
+sensor_pin: PC1
+pullup_resistor: 3000
+control: pid
+pid_Kp: 22
+pid_Ki: 1.08
+pid_Kd: 114
+min_temp: -100
+max_temp: 260
+min_extrude_temp: 0
