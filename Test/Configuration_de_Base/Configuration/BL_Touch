@@ -1,0 +1,39 @@
+#########################################################
+## BLTouch "https://www.youtube.com/watch?v=5vmjBXvY6BA"
+
+[bltouch]
+sensor_pin: ^PG6
+control_pin: PB11
+set_output_mode: 5V
+x_offset: 45.75
+y_offset: -3.40
+z_offset: 3.28
+samples: 2
+speed: 2
+
+[safe_z_home]
+home_xy_position: 119,95
+speed: 50
+z_hop: 5
+z_hop_speed: 5
+
+[bed_mesh]
+speed = 80
+horizontal_move_z = 5
+mesh_min = 10,10
+mesh_max = 200,200
+probe_count = 5,5
+mesh_pps: 2,2
+fade_start: 1
+fade_end: 10
+fade_target: 0
+
+[bed_screws]
+screw1: 30,30
+screw1_name: Vis Av Gauche
+screw2: 208,30
+screw2_name: Vis Av Droite
+screw3: 208,160
+screw3_name: Vis Ar Droite 
+screw4: 30,160
+screw4_name: Vis Ar Gauche
