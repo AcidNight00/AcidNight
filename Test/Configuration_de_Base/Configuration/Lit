@@ -1,0 +1,29 @@
+#########################################################
+## Lit :
+
+[heater_bed]
+heater_pin: PA2
+sensor_type: EPCOS 100K B57560G104F
+sensor_pin: PC0
+pullup_resistor: 3000
+control: pid
+pid_Kp: 22
+pid_Ki: 1.08
+pid_Kd: 114
+min_temp: -100
+max_temp: 100
+
+[bed_screws]
+screw0: 119,95
+screw0_name: Centre
+screw1: 30,30
+screw1_name: Avant Gauche
+screw2: 208,30
+screw2_name: Avant Droite
+screw3: 208,160
+screw3_name: Arriere Droite 
+screw4: 30,160
+screw4_name: Arriere Gauche
+horizontal_move_z: 10.
+speed: 70.
+screw_thread: CW-M3
